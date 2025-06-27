@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
+import ProFastLogo from "../ProFastLogo/ProfastLogo";
 
 const Navbar = () => {
   const navItems = (
@@ -13,7 +14,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm rounded-2xl">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +39,9 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">
+          <ProFastLogo />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
