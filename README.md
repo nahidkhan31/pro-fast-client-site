@@ -8,4 +8,4 @@
 
 # 2.tailwind Css and DaisyUi
 
-# 3.
+# 3.npm install react-responsive-carousel --save
