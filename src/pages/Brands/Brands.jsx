@@ -1,29 +1,35 @@
 import React from "react";
 import Logo1 from "../../assets/brands/amazon.png";
-import Logo3 from "../../assets/brands/casio.png";
-import Logo4 from "../../assets/brands/moonstar.png";
+import Logo2 from "../../assets/brands/casio.png";
+import Logo3 from "../../assets/brands/moonstar.png";
 
-import Logo6 from "../../assets/brands/randstad.png";
-import Logo7 from "../../assets/brands/start-people 1.png";
-import Logo8 from "../../assets/brands/start.png";
+import Logo4 from "../../assets/brands/randstad.png";
+import Logo5 from "../../assets/brands/start-people 1.png";
+import Logo6 from "../../assets/brands/start.png";
+import Marquee from "react-fast-marquee";
+
+const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 
 const Brands = () => {
   return (
-    <div className="w-11/12 mx-aut ">
-      <div className="mb-9">
-        <h1 className="text-center text-2xl font-bold mb-3">
-          We've helped thousands of sales teams
-        </h1>
+    <section className="py-10 bg-gray-100">
+      <div className="max-w-7xl mx-auto px-4">
+        <h2 className="text-2xl font-bold text-center mb-6">
+          Trusted by Leading Brands
+        </h2>
+        <Marquee pauseOnHover speed={50} gradient={false}>
+          {logos.map((logo, index) => (
+            <div key={index} className="mx-8 flex items-center">
+              <img
+                src={logo}
+                alt={`client Logo ${index + 1}`}
+                className="h-16"
+              />
+            </div>
+          ))}
+        </Marquee>
       </div>
-      <div className="grid grid-cols-3 lg:grid-cols-6 gap-2 mb-4 w-11/12 mx-auto">
-        <img className="w-30" src={Logo1} alt="" />
-        <img className="w-30" src={Logo3} alt="" />
-        <img className="w-30" src={Logo4} alt="" />
-        <img className="w-30" src={Logo6} alt="" />
-        <img className="w-30" src={Logo7} alt="" />
-        <img className="w-30" src={Logo8} alt="" />
-      </div>
-    </div>
+    </section>
   );
 };
 

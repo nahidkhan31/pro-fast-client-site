@@ -11,3 +11,5 @@
 # 3.npm install react-responsive-carousel --save
 
 # 4.npm install react-icons
+
+# 5.npm install react-fast-marquee
