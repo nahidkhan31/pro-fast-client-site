@@ -9,3 +9,5 @@
 # 2.tailwind Css and DaisyUi
 
 # 3.npm install react-responsive-carousel --save
+
+# 4.npm install react-icons
