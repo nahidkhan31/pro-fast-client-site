@@ -11,7 +11,7 @@ const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6];
 
 const Brands = () => {
   return (
-    <section className="py-10 bg-gray-100">
+    <section className="py-10 bg-gray-100 mt-5 mb-5 rounded-2xl">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-12">
           Trusted by Leading Brands

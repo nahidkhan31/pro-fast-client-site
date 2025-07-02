@@ -3,7 +3,9 @@ import React from "react";
 const BenefitsCard = ({ benefits }) => {
   const { title, description, image } = benefits;
   return (
-    <div className="card bg-base-100 shadow-md border hover:shadow-lg transition-all">
+    <div
+      data-aos="fade-down-right"
+      className="card bg-base-100 flex justify-between shadow-md border hover:shadow-lg transition-all">
       <div className="card-body flex flex-col items-start gap-4">
         <img className="w-16 h-16 object-contain" src={image} alt="" />
         <div className="divider divider-horizontal hidden sm:flex my-0" />

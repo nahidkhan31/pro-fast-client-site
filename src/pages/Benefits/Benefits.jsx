@@ -32,7 +32,7 @@ const Benefits = () => {
     <div className="py-16 bg-base-200">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
-        <div className="grid gap-6">
+        <div className="flex flex-col gap-6">
           {data.map((benefits) => (
             <BenefitsCard key={benefits.id} benefits={benefits}></BenefitsCard>
           ))}
