@@ -15,3 +15,5 @@
 # 5.npm install react-fast-marquee
 
 # 6.npm install --save aos@next
+
+# 7. npm install framer-motion
