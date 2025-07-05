@@ -16,4 +16,6 @@
 
 # 6.npm install --save aos@next
 
-# 7. npm install framer-motion
+# 7.npm install framer-motion
+
+# 8.npm install react-hook-form
