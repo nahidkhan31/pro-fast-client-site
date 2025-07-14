@@ -19,3 +19,5 @@
 # 7.npm install framer-motion
 
 # 8.npm install react-hook-form
+
+# 9.npm install firebase
