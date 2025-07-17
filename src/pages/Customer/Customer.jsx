@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 const Customer = () => {
   const [data, setData] = useState([]);
-  console.log(data);
+  // console.log(data);
   useEffect(() => {
     fetch("/reviews.json")
       .then((res) => res.json())

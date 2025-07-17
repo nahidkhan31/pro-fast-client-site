@@ -1,5 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import useAuth from "../../hooks/useAuth";
+import { Link } from "react-router";
+import SocialLogIn from "../SocialLogIn/SocialLogIn";
 
 const Register = () => {
   const {
@@ -7,9 +10,18 @@ const Register = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const { createUser } = useAuth();
 
   const onSubmit = (data) => {
-    console.log(data);
+    const { email, password } = data;
+    console.log(email, password);
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
   return (
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -41,8 +53,15 @@ const Register = () => {
           <div>
             <a className="link link-hover">Forgot password?</a>
           </div>
-          <button className="btn btn-neutral mt-4">Register</button>
+          <button className="btn btn-primary text-black mt-4">Register</button>
+          <p className="font-semibold text-center">
+            All ready have an account ? Please{" "}
+            <Link to="/login" className="text-secondary hover:underline">
+              Login
+            </Link>
+          </p>
         </form>
+        <SocialLogIn></SocialLogIn>
       </div>
     </div>
   );
