@@ -21,3 +21,5 @@
 # 8.npm install react-hook-form
 
 # 9.npm install firebase
+
+# 10.npm install leaflet react-leaflet
